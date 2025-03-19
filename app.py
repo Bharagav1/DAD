@@ -6,8 +6,8 @@ app = Flask(__name__)
 # MySQL Database Configuration
 db = mysql.connector.connect(
     host="localhost",
-    user="root",      # Update with your MySQL username
-    password="Mouli@2004",      # Update with your MySQL password
+    user="root",      
+    password="sqldatabasepassword", 
     database="billing_db"
 )
 cursor = db.cursor()

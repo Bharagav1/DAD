@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stored Bills</title>
+</head>
+<body>
+    <h2>Billing Records</h2>
+    <table border="1">
+        <tr>
+            <th>Bill ID</th>
+            <th>Customer Name</th>
+            <th>Contact</th>
+            <th>Items</th>
+            <th>Total Amount</th>
+            <th>Date</th>
+        </tr>
+        {% for bill in bills %}
+        <tr>
+            <td>{{ bill[0] }}</td>
+            <td>{{ bill[1] }}</td>
+            <td>{{ bill[2] }}</td>
+            <td>{{ bill[3] }}</td>
+            <td>${{ bill[4] }}</td>
+            <td>{{ bill[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
